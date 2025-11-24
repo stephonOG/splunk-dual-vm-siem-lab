@@ -73,7 +73,6 @@ A custom **Host-Only** network was created in UTM to allow isolated communicatio
 
 
 
-
 # 🛠 Tools Used
 
 Below are the main tools used across macOS, Windows, and Ubuntu:
@@ -87,5 +86,20 @@ Below are the main tools used across macOS, Windows, and Ubuntu:
   - `xfreerdp`
   - `enum4linux`
   - `smbclient`
-- **Git & GitHub** (project documentation)
 
+
+## Why This Lab Uses NXLog Instead of the Splunk Universal Forwarder
+
+The Windows VM in this lab runs on **Windows 11 ARM64**.  
+Splunk’s **Universal Forwarder** currently supports **Windows x64 and x86**, but it does not provide an ARM64 build.
+
+Because of this limitation, the Universal Forwarder cannot be installed on Windows ARM systems.
+
+To ensure reliable Windows Event Log forwarding into Splunk, this project uses:
+
+**➡️ NXLog Community Edition**
+
+NXLog is a lightweight and flexible log collector that **supports Windows ARM**, integrates cleanly with the Windows Event Log API, and can forward logs over **TCP 9997** directly into Splunk.
+
+Official NXLog documentation:  
+https://docs.nxlog.co/userguide/index.html
