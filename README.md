@@ -6,7 +6,7 @@
 
 This project documents a complete **Splunk SIEM Home Lab** built on macOS using two virtual machines running on UTM:
 
-- **Ubuntu VM (Attacker)** – performs RDP brute-force, port scanning, SMB enumeration, and network recon
+- **Ubuntu VM (Attacker)** – performs RDP brute-force, port scanning, and network recon
 - **Windows 11 VM (Victim)** – generates logs (4624/4625/etc.) and forwards them to Splunk via NXLog  
 - **Splunk Enterprise on macOS** – ingests logs and detects attacks in real time
 
