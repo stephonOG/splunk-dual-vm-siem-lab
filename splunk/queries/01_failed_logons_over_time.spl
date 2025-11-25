@@ -1,0 +1,2 @@
+index=win_logs source="tcp:9997" "AUDIT_FAILURE 4625"
+| timechart span=5m count AS failed_logons

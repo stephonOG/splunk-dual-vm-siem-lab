@@ -1,0 +1,4 @@
+index=win_logs source="tcp:9997" "AUDIT_FAILURE 4625"
+| rex "Source Network Address:\s(?<src_ip>\S+)"
+| stats count AS failed_logons by src_ip
+| sort - failed_logons

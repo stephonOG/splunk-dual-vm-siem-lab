@@ -1,0 +1,6 @@
+index=win_logs source="tcp:9997" "AUDIT_FAILURE 4625"
+| rex "Source Network Address:\s(?<src_ip>\S+)"
+| bucket _time span=5m
+| stats count AS failed_logons by src_ip, _time
+| where failed_logons >= 5
+| sort - failed_logons
