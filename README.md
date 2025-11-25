@@ -14,7 +14,7 @@ This environment simulates realistic SOC/Blue-Team monitoring and detection scen
 
 ---
 
-# 🏛 Architecture
+# Architecture
 
 <p align="center">
   <img src="diagrams/lab_diagram.png" alt="SIEM Architecture Diagram" width="800">
@@ -49,7 +49,7 @@ This environment simulates realistic SOC/Blue-Team monitoring and detection scen
 
 ---
 
-# 🔌 Host-Only Network Setup (`splunk-lab-net`)
+# Host-Only Network Setup
 
 A custom **Host-Only** network was created in UTM to allow isolated communication between Ubuntu (attacker) and Windows (victim).
 
@@ -77,10 +77,10 @@ Below are the main tools used across macOS, Windows, and Ubuntu:
 
 - **Splunk Enterprise 10.x** (SIEM)
 - **UTM Virtualization on macOS**
-- **Windows Event Logging + NXLog**
+- **NXLog + Windows Event Logging**
 - **Ubuntu Attack Tools:**
-  - `nmap`
   - `hydra`
+  - `nmap`
 
 
 ## Why This Lab Uses NXLog Instead of the Splunk Universal Forwarder
