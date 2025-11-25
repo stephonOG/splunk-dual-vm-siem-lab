@@ -81,9 +81,6 @@ Below are the main tools used across macOS, Windows, and Ubuntu:
 - **Ubuntu Attack Tools:**
   - `nmap`
   - `hydra`
-  - `xfreerdp`
-  - `enum4linux`
-  - `smbclient`
 
 
 ## Why This Lab Uses NXLog Instead of the Splunk Universal Forwarder
