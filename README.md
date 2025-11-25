@@ -44,10 +44,8 @@ This environment simulates realistic SOC/Blue-Team monitoring and detection scen
 ### **Ubuntu 24.04 – Attacker**
 - **Host-Only IP:** `192.168.50.10`
 - Performs real-world attack simulations:
-  - RDP brute force (via `xfreerdp`, `hydra`)
+  - RDP brute force (via `hydra`)
   - Port scanning (`nmap`)
-  - SMB enumeration (`smbclient`, `enum4linux`)
-  - Network probing
 
 ---
 
