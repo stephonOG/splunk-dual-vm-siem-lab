@@ -71,7 +71,7 @@ A custom **Host-Only** network was created in UTM to allow isolated communicatio
 
 
 
-# 🛠 Tools Used
+# Tools Used
 
 Below are the main tools used across macOS, Windows, and Ubuntu:
 
